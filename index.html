@@ -65,21 +65,21 @@
       <div class="funds-section container">
         
         <div class="row">
-          <div class="col col-12 col-md-auto">
+          <div class="col col-12 col-md-4 col-lg-auto">
             <div class="row align-items-center justify-content-center">
               <h2 class="col-12 col-lg-auto font-weight-normal text-primary text-center text-lg-right">$1,210,000</h2>
               <h5 class="col-12 col-lg-auto text-white font-weight-bold text-center text-lg-left">Funds<br class="d-none d-md-block" /> 
                 raised</h5>
             </div>
           </div>
-          <div class="col col-12 col-md">
+          <div class="col col-12 col-md-4 col-lg">
             <div class="row align-items-center justify-content-center">
               <h2 class="col-12 col-lg-auto font-weight-normal text-primary text-center text-lg-right">43</h2>
               <h5 class="col-12 col-lg-auto text-white font-weight-bold text-center text-lg-left">Yesomim & <br class="d-none d-md-block" />
                 Almanos funded</h5>
             </div>
           </div>
-          <div class="col col-12 col-md">
+          <div class="col col-12 col-md-4 col-lg">
             <div class="row align-items-center justify-content-center">
               <h2 class="col-12 col-lg-auto font-weight-normal text-primary text-center text-lg-right">96</h2>
               <h5 class="col-12 col-lg-auto text-white font-weight-bold text-center text-lg-left">Members have<br class="d-none d-md-block" /> contributed</h5>
@@ -101,7 +101,8 @@
 
         <div class="row align-items-center">
           <div class="col-md-auto col-12 text-center text-md-left">
-            <img src="images/our-goal.svg" />
+            <img class="d-none d-md-inline-block" src="images/our-goal.svg" />
+            <p class="d-block d-md-none font-weight-bold text-lg mb-1" style="color: #27406C;">Our Goal</p>
           </div>
           <div class="col-md-auto col-12 text-center text-md-left">
             <h2 class="font-weight-bold text-white">96 Yesomim</h2>
@@ -121,22 +122,25 @@
 
         <!-- Mendal Div -->
         <div class="row align-items-end">
-          <div class="col col-3">
+          <div class="col-md col-md-3">
             <p class="text-sm mb-2">Hi, Arevim Member,</p>
             <h4 class="font-weight-bold mb-0">Mendel</h4>
           </div>
-          <div class="col col-9 text-sm">
+          <div class="col-md col-md-9 text-sm mt-4 mt-md-0">
 
             <div class="row align-items-center">
-              <div class="col-auto">
+              <div class="col-auto d-none d-md-inline-block">
                 Personal Goal
               </div>
-              <div class="col fund-loading sm">
-                <span class="percentage" style="width: 50%;"></span>
-                <span class="font-weight-bold">50% Funded</span>
+              <div class="col-md px-md-0">
+                <div class="fund-loading sm">
+                  <span class="percentage" style="width: 50%;"></span>
+                  <span class="font-weight-bold">50% Funded</span>
+                </div>
               </div>
-              <div class="col-auto">
-                <h6 class="font-weight-normal mb-0">$323 Contributed</h6>
+              <div class="col-md-auto mt-3 mt-md-0">
+                <h6 class="d-none d-md-block font-weight-normal mb-0">$323 Contributed</h6>
+                <h6 class="d-block d-md-none font-weight-bold text-primary mb-0">$323 Contributed</h6>
               </div>
             </div>
 
@@ -148,8 +152,14 @@
         <div class="form-section">
           <form>
 
-            <div class="row justify-content-between align-items-end">
-              <div class="col-auto">
+            <div class="row flex-row-reverse justify-content-between align-items-end">
+              <div class="col-lg-auto">
+                <div class="nav nav-tabs card-nav-tabs" role="tablist">
+                  <a class="nav-link active" data-toggle="tab" href="#card-tab" role="tab">Card</a>
+                  <a class="nav-link" data-toggle="tab" href="#ach-tab" role="tab">ACH</a>
+                </div>
+              </div>
+              <div class="col-lg-auto mt-4 mt-lg-0 pt-4 pt-lg-0">
 
                 <div class="row align-items-end">
                   <div class="col-auto">
@@ -174,14 +184,6 @@
                   </div>
                 </div>
 
-              </div>
-              <div class="col-auto">
-                <div class="nav nav-tabs card-nav-tabs" role="tablist">
-                  <a class="nav-link active" data-toggle="tab" href="#card-tab" role="tab">Card</a>
-                  <a class="nav-link" data-toggle="tab" href="#ach-tab" role="tab">ACH</a>
-                </div>
-
-                
               </div>
             </div>
 
