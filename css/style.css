@@ -337,12 +337,18 @@ h6{
     background: -webkit-linear-gradient(left,  rgba(40,78,138,1) 0%,rgba(33,63,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  rgba(40,78,138,1) 0%,rgba(33,63,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#284e8a', endColorstr='#213f70',GradientType=1 ); /* IE6-9 */
-    padding: 1.375rem;
+    padding: 1.375rem 3rem;
+}
+.funds-section > .row > .col:first-child{
+    padding-left: 5.625rem;
+}
+.funds-section > .row > .col:last-child{
+    padding-right: 5.625rem;
 }
 
 /*** Our Goal ***/
 .our-goal-section{
-    padding: 1.8125rem 3rem;
+    padding: 1.8125rem 5.625rem;
 }
 .fund-loading{
     border-radius: 11px;
@@ -387,7 +393,7 @@ h6{
 }
 .mendel-section{
     background: #F4F4F4;
-    padding: 1.3rem 3rem 7.9375rem;
+    padding: 1.3rem 5.625rem 7.9375rem;
     position: relative;
 }
 .mendel-section:after{
@@ -523,12 +529,13 @@ h6{
     max-width: 970px;
     margin-left: auto;
     margin-right: auto;
+    color: #989898;
 }
 .content-section .flex-row .content-area{
-    padding-left: 7.625rem;
+    padding-left: 6.625rem;
 }
 .content-section .flex-row-reverse .content-area{
-    padding-right: 7.625rem;
+    padding-right: 6.625rem;
 }
 
 /*** Additional Payment ***/
@@ -601,7 +608,43 @@ h6{
 
 @media only screen and (max-width: 768px){
     
+    .header .row > .col:first-child{display: none;}
+    .header .row > .col{
+        width: 100%;
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
 
+    .header .logo{
+        max-width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn{
+        padding: 0.625rem;
+        min-width: 100px;
+    }
+
+    .funds-section{
+        position: static;
+        max-width: 100%;
+    }
+    .funds-section > .row > .col{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#284e8a+0,213f70+100 */
+        background: rgb(40,78,138); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(40,78,138,1) 0%, rgba(33,63,112,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(40,78,138,1) 0%,rgba(33,63,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(40,78,138,1) 0%,rgba(33,63,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#284e8a', endColorstr='#213f70',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .our-goal-section.container{
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 640px){
