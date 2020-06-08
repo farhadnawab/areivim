@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'circularrstd';
+    src: url('fonts/CircularStd-Book.woff2') format('woff2'),
+        url('fonts/CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'circularrstd';
+    src: url('fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'circularrstd';
+    src: url('fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('fonts/CircularStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+:root{
+    --font-circularrstd: 'circularrstd', sans-serif;
+    --primary: #43B7CD;
+    --secondary:#E61821;
+    --tertiary: #E8E8E8;
+    --fourth: #CD171F;
+    --fifth: #264A82;
+    --sixth: #717171;
+    --seventh: #989898;
+}
+
+img{max-width: 100%;}
+
+html{
+    font-size: 16px;
+}
+body{
+    font-family: var(--font-circularrstd);
+    font-size: 1rem;
+    color: var(--sixth);
+    background: #fff;
+    line-height: 1.1;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-circularrstd);
+    line-height: 1;
+}
+
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: 3.75rem;
+}
+h3{
+    font-size: 2.25rem;
+}
+h4{
+    font-size: 1.875rem;
+}
+h5{
+    font-size: 1.625rem;
+}
+h6{
+    font-size: 1.3125rem;
+}
+
+.main-wrapper{
+    max-width: 2100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** Helper CSS **/
+.font-circularrstd{
+    font-family: var(--font-circularrstd);
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.text-tertiary{
+    color: var(--tertiary);
+}
+.text-fourth{
+    color: var(--fourth);
+}
+.text-fourth{
+    color: var(--fifth);
+}
+
+.bg-primary{
+    background: var(--primary);
+}
+.bg-secondary{
+    background: var(--secondary);
+}
+.bg-tertiary{
+    background: var(--tertiary);
+}
+.bg-fourth{
+    background: var(--fourth);
+}
+.bg-fifth{
+    background: var(--fifth);
+}
+
+.hover-scale-in{
+    -webkit-transition: transform ease 0.3s !important;
+    -moz-transition: transform ease 0.3s !important;
+    transition: transform ease 0.3s !important;
+}
+.hover-scale-in:hover{
+    -webkit-transform: scale(1.1) !important;
+    -moz-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+}
+
+.shadow-type-1{
+    -webkit-box-shadow: 0px 5px 40px rgba(170, 170, 170, 0.19);
+    -moz-box-shadow: 0px 5px 40px rgba(170, 170, 170, 0.19);
+    box-shadow: 0px 5px 40px rgba(170, 170, 170, 0.19);
+}
+
+.rounded-lg {
+    border-radius: 1rem;
+}
+
+.form-control {
+    display: block;
+    border-radius: 5px;
+    background: #F5F5F5;
+    border: 0;
+    outline: none;
+    min-height: 53px;
+    padding: 12px 16px;
+    resize: none;
+    width: 100%;
+}
+
+
+/*** Buttons theming ****/
+.btn{
+    padding: 0.9375rem 1.875rem;
+    border-radius: 9px;
+    font-size: 1.3125rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    min-width: 130px;
+    text-align: center;
+}
+.btn.rounded{
+    border-radius: 20px;
+}
+.btn-sm{
+    font-size: 0.9rem;
+    min-width: 0;
+}
+.btn:hover{
+    background-color: var(--tertiary);
+}
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+}
+.btn-secondary{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+}
+.btn-secondary:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+.btn-tertiary{
+    background-color: var(--tertiary);
+    border-color: var(--tertiary);
+    color: var(--sixth);
+}
+.btn-tertiary:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+.btn-fourth{
+    background-color: var(--fourth);
+    border-color: var(--fourth);
+    color: #707070;
+}
+.btn-fourth:hover{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+}
+.btn-white{
+    background-color: #fff;
+    color: var(--primary);
+}
+.btn-white:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+/*** Header ***/
+.header{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+.header .container{
+    max-width: 1500px;
+}
+.header .row > .col:first-child{
+    max-height: 6.5rem;
+}
+
+
+/*** Hero Section ***/
+.hero-section{
+    background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    height: 42.125rem;
+    font-size: 1.3125rem;
+}
+.hero-section .container{
+    max-width: 940px;
+}
+.hero-section .container p{
+    line-height: 1.4;
+}
+.hero-section .container .btn{
+    border-color: #fff;
+    border-width: 2px;
+    font-size: 1.125rem;
+    min-width: 18.4375rem;
+    box-shadow: 30px 30px 60px rgba(0,0,0, 0.16);
+}
+
+
+/*** Funds Section ***/
+.funds-section{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.funds-section > .row > .col{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#284e8a+0,213f70+100 */
+    background: rgb(40,78,138); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(40,78,138,1) 0%, rgba(33,63,112,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(40,78,138,1) 0%,rgba(33,63,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(40,78,138,1) 0%,rgba(33,63,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#284e8a', endColorstr='#213f70',GradientType=1 ); /* IE6-9 */
+    padding: 1.375rem;
+}
+
+
+/**** Responsive *****/
+/*********************/
+
+@media only screen and (min-width: 1200px){
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+}
+@media only screen and (max-width: 1280px){
+
+}
+
+@media only screen and (max-width: 1024px){
+
+    html{font-size: 14px;}
+
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
+@media only screen and (max-width: 768px){
+    
+
+}
+
+@media only screen and (max-width: 640px){
+
+}
+
+@media only screen and (max-width: 480px){
+    
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 1.9rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+    h5{
+        font-size: 1.2rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+
+    .btn{
+        min-width: 0;
+    }
+
+}
