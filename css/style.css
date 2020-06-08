@@ -511,6 +511,29 @@ h6{
 }
 .form-section .amount-field{
     max-width: 140px;
+    position: relative;
+}
+.form-section .amount-field:after{
+    content: "";
+    display: block;
+    background-image: url("../images/number-arrows.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 30px 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    pointer-events: none;
+}
+.form-section .amount-field input{
+    padding-right: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 0;
+   height: 59px;
 }
 .card-nav-tabs{
     border: 0;
@@ -757,16 +780,21 @@ h6{
         top: -50%;
         left: 50%;
     }
+
+    .form-section .amount-field{
+        max-width: 75px;
+        position: relative;
+    }
+    .form-section .amount-field:after{
+        background-size: 20px 100%;
+        width: 20px;
+    }
 }
 
 @media only screen and (max-width: 576px){
 
     .form-select.transparent-white{
         padding-left: 0;
-    }
-
-    .form-section .amount-field{
-        max-width: 75px;
     }
 
     .form-section .btn{
