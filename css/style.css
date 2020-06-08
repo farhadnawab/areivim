@@ -170,7 +170,7 @@ h6{
     background: #fff;
     border: 1px solid #CECECE;
     outline: none;
-    min-height: 50px;
+    min-height: 3.125rem;
     padding: 0.5rem 0.9rem;
     resize: none;
     width: 100%;
@@ -194,6 +194,7 @@ h6{
     background-image: url("../images/dropdown_arrow.png");
     background-repeat: no-repeat;
     background-position: right 15px center;
+    min-width: 65px;
 }
 ::-webkit-input-placeholder { /* Edge */
     color: #ADADAD;
@@ -283,6 +284,10 @@ h6{
 .btn-white:hover{
     background-color: var(--primary);
     color: #fff;
+}
+
+.whitespace-nowrap{
+    white-space: nowrap;
 }
 
 /*** Header ***/
@@ -432,6 +437,7 @@ h6{
     height: 486px;
     margin-top: 5.625rem;
     position: relative;
+    padding: 0 1.875rem;
 }
 .contribute-share-section:after{
     content: "";
@@ -462,6 +468,7 @@ h6{
     background-position: right 5px center;
     box-shadow: none;
     padding-right: 1.5rem;
+    min-width: 0;
 }
 .form-select.transparent-white option{
     color: #000;
@@ -472,6 +479,9 @@ h6{
     background: #fff;
     border-radius: 9px;
     padding: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .payment-box .price{
     color: #294E89;
@@ -498,6 +508,9 @@ h6{
 .form-section .btn:hover{
     background-color: var(--primary);
     border-color: var(--primary);
+}
+.form-section .amount-field{
+    max-width: 140px;
 }
 .card-nav-tabs{
     border: 0;
@@ -697,36 +710,73 @@ h6{
 
     .form-section{
         margin-top: 2.375rem;
+        padding: 2.8125rem 2.25rem;
+    }
+
+    .form-control.lg {
+        font-size: 1.375rem;
+    }
+
+    .content-section .flex-row .content-area{
+        padding-left: 15px;
+    }
+    .content-section .flex-row-reverse .content-area{
+        padding-right: 15px;
+    }
+    .content-section .content-area .text-wrap{
+        background: #F4F4F4;
+        padding: 2.9375rem 2.25rem;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .blue-background-section{
+        background: #2A508D;
+        padding-bottom: 6.75rem;
+    }
+    .mendel-section:after{
+        bottom: 0;
+        left: 0;
+    }
+
+    .sea-green-section{
+        padding-top: 3.75rem;
+        padding-bottom: 0;
+    }
+    .sea-green-section > .container{
+        max-width: 100%;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+    .contribute-share-section{
+        margin-left: -1.875rem;
+        margin-right: -1.875rem;
+    }
+    .contribute-share-section:after {
+        bottom: auto;
+        right: auto;
+        top: -50%;
+        left: 50%;
     }
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 576px){
 
+    .form-select.transparent-white{
+        padding-left: 0;
+    }
+
+    .form-section .amount-field{
+        max-width: 75px;
+    }
+
+    .form-section .btn{
+        min-width: 0;
+    }
 }
 
 @media only screen and (max-width: 480px){
     
-    h1{
-        font-size: 2.8rem;
+    .form-section .btn{
+        width: 100%;
     }
-    h2{
-        font-size: 1.9rem;
-    }
-    h3{
-        font-size: 1.6rem;
-    }
-    h4{
-        font-size: 1.4rem;
-    }
-    h5{
-        font-size: 1.2rem;
-    }
-    h6{
-        font-size: 1rem;
-    }
-
-    .btn{
-        min-width: 0;
-    }
-
 }

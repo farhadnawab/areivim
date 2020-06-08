@@ -164,71 +164,105 @@
                 <div class="row align-items-end">
                   <div class="col-auto">
                     <h6 class="font-weight-normal">Amount</h6>
-                    <input type="number" class="form-control lg" style="max-width: 140px;" />
+                    <input type="number" class="form-control lg amount-field" />
                   </div>
 
                   <div class="col-auto">
                     <h6 class="font-weight-normal">Payments</h6>
-                    <select class="form-control form-select lg">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
+                    <div class="d-flex align-items-center">
+                      <select class="form-control form-select lg">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <h6 class="font-weight-bold text-primary whitespace-nowrap d-block d-md-none ml-3">2 x 225</h6>
+                    </div>
                   </div>
 
-                  <div class="col-auto" style="color: #ADADAD">
+                  <div class="col-auto d-none d-md-block" style="color: #ADADAD">
                     <h6 class="font-weight-normal">2 x 225</h6>
                     <p class="text-sm mb-0">To be charged now and<br/> every 15th of the month </p>
                   </div>
                 </div>
 
+                <p class="text-sm mt-4" style="color: #ADADAD">To be charged now and every 15th of the month </p>
+
               </div>
             </div>
 
-            <div class="tab-content mt-5">
+            <div class="tab-content mt-4 mt-md-5">
 
               <!-- Card Tab -->
               <div class="tab-pane fade show active" role="tabpanel" id="card-tab">
                 <div class="form-row">
-                  <div class="form-group col-8">
+                  <div class="form-group col-md-8">
                     <h6 class="font-weight-normal">Billing Information</h6>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-4 d-none d-md-block">
                     <h6 class="font-weight-normal">Card Information</h6>
                   </div>
                   <div class="w-100"></div>
 
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <input type="text" class="form-control" placeholder="Name" required />
                     <div class="invalid-feedback">
                       Please provide your Name.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4 d-block d-md-none">
+                    <input type="text" class="form-control" placeholder="Email Address" required />
+                    <div class="invalid-feedback">
+                      Please provide your Email Address.
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
                     <input type="text" class="form-control" placeholder="Billing Address" required />
                     <div class="invalid-feedback">
                       Please provide your Billing Address.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4 d-none d-md-block">
                     <input type="text" class="form-control" placeholder="Card Number" required />
                     <div class="invalid-feedback">
                       Please provide your Card Number.
                     </div>
                   </div>
                   <div class="w-100"></div>
+                  <br class="d-block d-md-none" />
+                  
+                  <div class="form-group col-12 d-block d-md-none">
+                    <h6 class="font-weight-normal">Card Information</h6>
+                  </div>
 
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4 d-block d-md-none">
+                    <input type="text" class="form-control" placeholder="Card Number" required />
+                    <div class="invalid-feedback">
+                      Please provide your Card Number.
+                    </div>
+                  </div>
+                  
+                  <div class="form-group col-md-4 d-block d-md-none">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Exp MM/YY" required />
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Cvv" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-4 d-none d-md-block">
                     <input type="text" class="form-control" placeholder="Email Address" required />
                     <div class="invalid-feedback">
                       Please provide your Email Address.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <div class="form-row">
-                      <div class="col col-5">
+                      <div class="col col-md-5">
                         <input type="text" class="form-control" placeholder="City" required />
                       </div>
                       <div class="col">
@@ -239,7 +273,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-4 d-none d-md-block">
                     <div class="form-row">
                       <div class="col">
                         <input type="text" class="form-control" placeholder="Exp MM/YY" required />
@@ -267,19 +301,19 @@
               <div class="tab-pane fade" role="tabpanel" id="ach-tab">
                 <div class="form-row">
 
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <input type="text" class="form-control" placeholder="Name" required />
                     <div class="invalid-feedback">
                       Please provide your Name.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <input type="email" class="form-control" placeholder="Email Address" required />
                     <div class="invalid-feedback">
                       Please provide your Email Address.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <select class="form-control form-select" required>
                       <option>Bank</option>
                       <option>Bank 1</option>
@@ -292,19 +326,19 @@
                   </div>
                   <div class="w-100"></div>
 
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <input type="text" class="form-control" placeholder="Routing Number" required />
                     <div class="invalid-feedback">
                       Please provide your Routing Number.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <input type="text" class="form-control" placeholder="Account Number" required />
                     <div class="invalid-feedback">
                       Please provide your Account Number.
                     </div>
                   </div>
-                  <div class="form-group col-4">
+                  <div class="form-group col-md-4">
                     <input type="text" class="form-control" placeholder="Confirm Account Number" required />
                     <div class="invalid-feedback">
                       Account Number doesn't match.
@@ -334,33 +368,37 @@
 
           <!-- Image Left Section -->
           <div class="row flex-row align-items-center pt-5">
-            <div class="col-6">
-              <img src="images/img1.png" />
+            <div class="col-md-6">
+              <img class="w-100" src="images/img1.png" />
             </div>
-            <div class="col-6 content-area">
-              <h3 class="font-weight-bold text-secondary mb-4">Accelerated giving. </h3>
+            <div class="col-md-6 content-area">
+              <div class="text-wrap">
+                <h3 class="font-weight-bold text-secondary mb-4">Accelerated giving. </h3>
 
-              <p class="text-lg leading-5">
-                <span class="text-primary font-weight-bold">96 fresh Yisomim and Almanos </span>
-                <br/>
-                are waiting for your support. Accelerating the process by contributing your full membership, will allow them to continue supporting their families in this difficult time of need.   
-              </p>
+                <p class="text-lg leading-5">
+                  <span class="text-primary font-weight-bold">96 fresh Yisomim and Almanos </span>
+                  <br/>
+                  are waiting for your support. Accelerating the process by contributing your full membership, will allow them to continue supporting their families in this difficult time of need.   
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Image Right Section -->
           <div class="row flex-row-reverse align-items-center pt-5">
-            <div class="col-6">
-              <img src="images/img2.png" />
+            <div class="col-md-6">
+              <img class="w-100" src="images/img2.png" />
             </div>
-            <div class="col-6 content-area">
-              <h3 class="font-weight-bold text-secondary mb-4">Accelerated giving. </h3>
+            <div class="col-md-6 content-area">
+              <div class="text-wrap">
+                <h3 class="font-weight-bold text-secondary mb-4">Accelerated giving. </h3>
 
-              <p class="text-lg leading-5">
-                <span class="text-primary font-weight-bold">96 fresh Yisomim and Almanos </span>
-                <br/>
-                are waiting for your support. Accelerating the process by contributing your full membership, will allow them to continue supporting their families in this difficult time of need.   
-              </p>
+                <p class="text-lg leading-5">
+                  <span class="text-primary font-weight-bold">96 fresh Yisomim and Almanos </span>
+                  <br/>
+                  are waiting for your support. Accelerating the process by contributing your full membership, will allow them to continue supporting their families in this difficult time of need.   
+                </p>
+              </div>
             </div>
           </div>
           <!-- Image Right Section END -->
@@ -379,7 +417,7 @@
       <div class="container">
 
         <!-- Title -->
-        <div class="d-flex justify-content-between align-items-center text-white mb-5">
+        <div class="d-block d-sm-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center text-white mb-4">
           <h3 class="font-weight-normal mb-0">Recent Payments</h3>
 
           <select class="form-control form-select transparent-white w-auto">
@@ -391,8 +429,8 @@
 
         <!-- 1st Row -->
         <div class="row">
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -401,8 +439,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -411,8 +449,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -421,8 +459,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -435,9 +473,9 @@
         <!-- 1st Row End -->
 
         <!-- 2nd Row -->
-        <div class="row mt-4">
-          <div class="col">
-            <div class="payment-box d-flex">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -446,8 +484,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -456,8 +494,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -466,8 +504,8 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="payment-box d-flex">
+          <div class="col-sm-6 col-lg-3 mt-4">
+            <div class="payment-box">
               <img src="images/ml-thumb.png" />
 
               <div class="pl-2 text-center">
@@ -481,7 +519,7 @@
 
         <div class="contribute-share-section">
           
-            <h2 class="font-weight-bold">96 Yesomim Almanos are waiting.<br/> 
+            <h2 class="font-weight-bold">96 Yesomim Almanos are waiting.<br class="d-none d-md-block"/> 
             How can you turn them away? </h2>
           
             <a href="#" class="btn btn-secondary mt-5">Contribute your share</a>
@@ -495,20 +533,22 @@
     <div class="additional-payment">
       <p class="text-lg mb-0 leading-4">
         For additional payment options or any questions and comments please contact us<br/> 
-        at: email  <a href="mailto:office@areivim.info">office@areivim.info</a>, fax <a href="fax:8775223484">8775223484</a> or phone <a href="tel:8778273484">877-827-3484</a></p>
+        at: email  <a href="mailto:office@areivim.info">office@areivim.info</a>, fax <a href="fax:8775223484">8775223484</a> or phone <a href="tel:8778273484">877-827-3484</a>
+      <br class="d-block d-md-none" />
+      <a href="javascript:void(0)" class="d-block mt-2" style="color: #AFAFAF;text-decoration: underline;">Terms & Condition </a></p>
     </div>
 
     <!-- Footer -->
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col text-left">
+          <div class="col-md text-center text-md-left">
             &copy; Copyright Areivim USA 2020
           </div>
-          <div class="col text-center">
+          <div class="col-md mt-3 mt-md-0 text-center">
             Project by: Jointtechs <img class="ml-2" src="images/footer_arrow.svg" />
           </div>
-          <div class="col text-right">
+          <div class="col-md text-md-right d-none d-md-block">
             <a href="javascript:void(0)">Terms & Condition </a>
           </div>
         </div>
